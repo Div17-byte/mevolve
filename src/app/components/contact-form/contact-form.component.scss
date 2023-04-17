@@ -1,0 +1,33 @@
+.contact-form {
+  background-color: var(--bg-white-2);
+}
+h4 {
+  color: var(--text-light);
+}
+.offer-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: calc(618px + 5rem);
+  background: #ffffff;
+  box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.05),
+    -4px -4px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+input {
+  border: 1px solid #949c9e;
+  border-radius: 6px;
+  padding: 15px;
+}
+textarea {
+  border: 1px solid #949c9e;
+  border-radius: 6px;
+  padding: 15px;
+}
+.btnForm {
+  background: #1da1f2;
+  border-radius: 6px;
+  padding: 15px 60px;
+  border: none;
+  color: #ffffff;
+}

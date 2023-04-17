@@ -1,0 +1,40 @@
+.plans {
+  background-color: #ffffff;
+}
+.price-box {
+  text-align: center;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 206px;
+  background: #ffffff;
+  /* shadow style */
+
+  box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.05),
+    -4px -4px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+
+  .price {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .period {
+    color: var(--text-light);
+  }
+}
+.offer-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: calc(618px + 5rem);
+  background: #ffffff;
+  box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.05),
+    -4px -4px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+
+  img {
+    width: 19.83px;
+    height: 19.83px;
+  }
+}

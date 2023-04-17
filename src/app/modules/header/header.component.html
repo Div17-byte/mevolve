@@ -1,0 +1,41 @@
+<div class="header-container">
+  <header
+    class="flex justify-between items-center px-custom md:px-60 py-4 bg-gray-800"
+  >
+    <div class="flex items-center">
+      <img src="../../../assets/logo/Mevolve.svg" alt="Mevolve" />
+    </div>
+    <nav class="hidden sm:block flex justify-end">
+      <a
+        *ngFor="let item of links; let i = index"
+        class="px-3 py-2"
+        [ngClass]="{
+          active: selectedLink === i
+        }"
+        >{{ item }}</a
+      >
+    </nav>
+    <button
+      (click)="showMenu = !showMenu"
+      class="sm:hidden flex items-center px-3 py-2 btn-menu"
+    >
+      <img *ngIf="!showMenu" src="../../../assets/images/menu.png" alt="" />
+      <img *ngIf="showMenu" src="../../../assets/images/close.png" alt="" />
+    </button>
+  </header>
+
+  <section
+    class="mobile-nav hidden sm:hidden"
+    [ngClass]="{ hidden: !showMenu }"
+  >
+    <nav class="px-2 pt-2 pb-4 px-custom flex flex-col">
+      <a href="#" class="py-3">Home</a>
+      <span class="divider"></span>
+      <a href="#" class="py-3">Features</a>
+      <span class="divider"></span>
+      <a href="#" class="py-3">Pricing</a>
+      <span class="divider"></span>
+      <a href="#" class="py-3">Contact us</a>
+    </nav>
+  </section>
+</div>

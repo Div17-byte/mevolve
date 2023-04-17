@@ -1,0 +1,36 @@
+.hero-text {
+  max-width: 503px;
+}
+img {
+  max-width: 482px;
+  max-height: 482px;
+  object-fit: contain;
+}
+.hero-subtext {
+  text-align: center;
+  width: 70%;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.btn-watch {
+  padding: 5px 55px;
+  font-size: 16px;
+  color: var(--bg-white-1);
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 6px;
+}
+.dots {
+  width: 8px;
+  height: 8px;
+  background-color: var(--bg-white-3);
+  border-radius: 50%;
+  &.active {
+    background-color: var(--primary-color);
+  }
+}

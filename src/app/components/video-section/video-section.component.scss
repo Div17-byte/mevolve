@@ -1,0 +1,11 @@
+.video-section {
+  background-color: var(--bg-white-2);
+}
+.video img {
+  width: 100%;
+  max-width: 390px;
+  object-fit: contain;
+}
+.video-text {
+  color: var(--text-light);
+}

@@ -1,0 +1,95 @@
+.header-container {
+  position: relative;
+
+  background-color: var(--primary-color);
+  .btn-menu {
+    background-color: transparent;
+    border: none;
+    &:hover {
+      box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.05),
+        -4px -4px 40px rgba(0, 0, 0, 0.05);
+    }
+  }
+  width: 100%;
+  nav {
+    position: relative;
+    a {
+      color: var(--bg-white-1);
+    }
+  }
+
+  nav a.active:after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: 12px;
+    margin-right: 12px;
+    width: 38px;
+    height: 6px;
+    background: #ffffff;
+    border-radius: 3px 3px 0px 0px;
+
+    bottom: -85%;
+    left: 1%;
+    right: 0;
+  }
+
+  svg {
+    width: 111px;
+    height: 35px;
+  }
+  header {
+    color: var(--bg-white-1);
+    background-color: var(--primary-color);
+    .brand-logo {
+      font-size: 30px;
+      color: var(--bg-white-1);
+      font-weight: 700;
+      span {
+        font-weight: 100;
+      }
+    }
+  }
+
+  .mobile-nav {
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    z-index: 1;
+  }
+  .mobile-nav.hidden {
+    transform: translateY(-100%);
+  }
+  .divider {
+    height: 0.5px;
+    background: #ffffff;
+    transform: rotate(180deg);
+  }
+
+  // Header padding
+  .px-custom {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  @media (max-width: 1024px) {
+    .px-custom {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+  @media (max-width: 428px) {
+    .px-custom {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+  @media (max-width: 280px) {
+    .px-custom {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+}

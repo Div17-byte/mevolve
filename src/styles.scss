@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind utilities;
+:root {
+  --primary-color: #1da1f2;
+  --bg-white-1: #ffffff;
+  --bg-white-2: #fafafa;
+  --bg-white-3: #d9d9d9;
+  --text-color: #323238;
+  --text-light: #9e9e9e;
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set default font size and line height */
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Remove list styles (bullets/numbers) */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove anchor text decoration */
+a {
+  text-decoration: none;
+}
+
+/* Remove table spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.text-light {
+  color: var(--text-light);
+}
